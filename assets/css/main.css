@@ -3,3 +3,28 @@
 	padding:0;
 	box-sizing:border-box;
 }
+.request-shoutout {
+width:100%;
+height:50px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.request-shoutout button {
+height:35px;
+width:300px;
+border:none;
+outline:none;
+font-size:1.1rem;
+font-weight:bold;
+border-radius:10px;
+background-color:hotpink;
+color:white;
+cursor:pointer;
+animation:blink 1s infinite linear alternate;
+}
+@keyframes blink{
+	from{box-shadow:0 0 2px 0 red;}
+	to{box-shadow:0 0 10px 0 blue;}
+
+}
