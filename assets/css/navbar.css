@@ -6,6 +6,7 @@
     --pure: #fff;
     --smoke: whitesmoke;
     --dark-gray: #999;
+    --pink:hotpink;
 }
 
 
@@ -47,7 +48,7 @@ box-shadow:0 0 1px 0 black;
 }
 
 .nav-wrapper ul.nav-list li a {
-    color: var(--dark);
+    color: hotpink;
     text-decoration: none;
     letter-spacing: 1px;
     transition: all .5s ease-in-out;
@@ -57,22 +58,6 @@ box-shadow:0 0 1px 0 black;
     color: var(--primary);
 }
 
-.btn {
-    background: var(--primary);
-    color: var(--pure);
-    outline: none;
-    padding: 8px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    letter-spacing: 1px;
-    border: 1px solid transparent;
-    transition: all .5s ease-in-out;
-}
-
-.btn:hover {
-    background: transparent;
-    border-color: var(--pure);
-}
 
 nav ul.dropdown-list {
     list-style-type: none;
