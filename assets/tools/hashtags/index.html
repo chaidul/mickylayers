@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Micky Layers</title>
+<title>Instagram hashtags</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="chaidul hussain (Raju)">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://chaidul.github.io/micky_layers/assets/css/main.css">
 	<link rel="stylesheet" href="https://chaidul.github.io/micky_layers/assets/css/navbar.css">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.box {
+width:100%;
+height:auto;
+padding:50px;
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+}
+.box .card {
+width:300px;
+height:250px;
+border-radius:10px;
+margin:10px auto;
+border:solid 1px hotpink;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+textarea {
+width:280px;
+height:170px;
+margin:10px;
+outline:none;
+border:solid 1px blue;
+font-family:serif;
+}
+button {
+width:200px;
+height:35px;
+border-radius:10px;
+font-weight:bold;
+border:solid 1px dodgerblue;
+outline:none;
+font-size:1.1rem;
+color:dodgerblue;
+cursor:pointer;
+}
+h3{
+color:purple;
+}
+</style>
 </head>
-<body class="mobile" >
+<body>
 
 <nav>
      <div class="container nav-wrapper">
@@ -49,39 +94,47 @@
     </nav>
 <script src="https://chaidul.github.io/micky_layers/assets/js/navbar.js"></script>
 
-<div class="request-shoutout" >
-<a href="https://instagram.com/cuties_of_world_" >
-<button>ꜱʜᴏᴜᴛᴏᴜᴛ ꜰᴏʀ ᴄᴜᴛɪᴇꜱ_ᴏꜰ_ᴡᴏʀʟᴅ</button>
-</a>
+<h2 align="center" >ɪɴꜱᴛᴀɢʀᴀᴍ ʜᴀꜱʜᴛᴀɢꜱ</h2>
+
+<div class="box" >
+
+<div class="card" >
+<h3 style="margin:5px;" >Simple photoshoot</h3>
+<textarea id="simple" >
+
+</textarea>
+<button id="copy" onclick="copy('simple')">Copy</button>
 </div>
 
-<section class="tools" id="tools" >
 
-<section class="card" >
-<span class="icon font" >𝓐𝓑</span>
-<a href="https://chaidul.github.io/micky_layers/assets/tools/micky_font/index.html" >
-<button class="btn" >ᴍɪᴄᴋʏ ꜰᴏɴᴛ ꜱᴛʏʟᴇ</button>
-</a>
-</section>
+<div class="card" >
+<h3 style="margin:5px;" >Nature</h3>
+<textarea id="reels" >
 
-
-<section class="card" >
-<span class="icon hashtag" >#</span>
-<a href="https://chaidul.github.io/micky_layers/assets/tools/hashtags/index.html" >
-<button class="btn" >ʜᴀꜱʜᴛᴀɢꜱ</button>
-</a>
-</section>
-
-<section class="card" >
-<span class="icon location" ><i style="color:green;"  class="fa fa-map-marker" > </i></span>
-<a href="#" >
-<button class="btn" >ɴᴇᴀʀᴇꜱᴛ ꜰʀɪᴇɴᴅ</button>
-</a>
-<div>Coming Soon</div>
-</section>
+</textarea>
+<button id="copy" onclick="copy('reels')">Copy</button>
+</div>
 
 
-</section>
+</div>
 
+
+
+<script type="text/javascript">
+function copy(id) {
+  // Get the text field
+  var copyText = document.getElementById(id)
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the hashtags: " + copyText.value);
+}
+
+
+
+</script>
 </body>
 </html>
