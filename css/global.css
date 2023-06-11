@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+a {
+  text-decoration: none;
+}
+.request-shoutout {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.request-shoutout-btn {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(243, 188, 7);
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(53, 14, 2);
+}
+.tools {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tools .card {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to right, rgb(245, 214, 128), rgb(247, 141, 203));
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tools .card .icon {
+  font-size: 34px;
+  color: rgb(250, 16, 16);
+  font-weight: bold;
+}
+
+.tools .card .btn {
+  margin: 20px auto;
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(216, 250, 92);
+}

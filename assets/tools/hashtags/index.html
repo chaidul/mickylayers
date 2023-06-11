@@ -1,205 +1,189 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Instagram hashtags</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="chaidul hussain (Raju)">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://www.mickylayers.tk/personal-project/micky_layers/css/navbar.css">
-<style type="text/css">
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-.box {
-width:100%;
-height:auto;
-padding:50px;
-display:flex;
-justify-content:space-around;
-flex-wrap:wrap;
-}
-.box .card {
-width:300px;
-height:250px;
-border-radius:10px;
-margin:10px auto;
-border:solid 1px hotpink;
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-textarea {
-width:280px;
-height:170px;
-margin:10px;
-outline:none;
-border:solid 1px blue;
-font-family:serif;
-}
-button {
-width:200px;
-height:35px;
-border-radius:10px;
-font-weight:bold;
-border:solid 1px dodgerblue;
-outline:none;
-font-size:1.1rem;
-color:dodgerblue;
-cursor:pointer;
-}
-h3{
-color:purple;
-}
-</style>
-</head>
-<body>
+  <head>
+    <title>Instagram hashtags</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="chaidul hussain (Raju)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/navbar.css" />
 
-<nav>
-     <div class="container nav-wrapper">
-            <div class="brand">
-                <img src="https://www.mickylayers.tk/personal-project/micky_layers/media/logo.png" class="brand-name"  width="170rem" >
-                
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-list">
-                <li>
-                    <a href="https://chaidul.github.io">Home</a>
-                </li>
-                <li><a href="https://github.com/chaidul/micky_layers">About</a></li>
-                <li>
-                    <a href="#">Services</a>
-                    <ul class="dropdown-list">
-                        <li><a href="#">Content Creation</a></li>
-                        <li><a href="#">Content Editing </a></li>
-                        <li><a href="#">Instagram Shoutout</a></li>
-                        <li><a href="#tools">Tools</a></li>
-                        <li><a href="#">Software Development </a></li>
-                      
-                        
-                    </ul>
-                </li>
-                <li><a href="https://instagram.com/micky_layers">Feedback</a></li>
-                <li><a href="https://www.linkedin.com/in/chaidul-hussain">Contact</a></li>
-                
-            </ul>
-        </div>
-    </nav>
-<script src="https://www.mickylayers.tk/personal-project/micky_layers/js/navbar.js"></script>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .box .card {
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+        margin: 10px auto;
+        border: solid 1px hotpink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      textarea {
+        width: 280px;
+        height: 170px;
+        margin: 10px;
+        outline: none;
+        border: solid 1px blue;
+        font-family: serif;
+      }
+      button {
+        width: 200px;
+        height: 35px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: solid 1px dodgerblue;
+        outline: none;
+        font-size: 1.1rem;
+        color: dodgerblue;
+        cursor: pointer;
+      }
+      h3 {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="nav-header">
+        <h1>😻ᴍɪᴄᴋʏ ʟᴀʏᴇʀꜱ🌈</h1>
+        <div class="toggle" id="toggle">menu</div>
+      </header>
+      <nav class="navbar">
+        <ul class="nav-ul hide-ul" id="nav-ul">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="" class="nav-link">About</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chaidul-hussain"
+              class="nav-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="../../../js/navbar.js"></script>
+    <h2 align="center">ɪɴꜱᴛᴀɢʀᴀᴍ ʜᴀꜱʜᴛᴀɢꜱ</h2>
 
-<h2 align="center" >ɪɴꜱᴛᴀɢʀᴀᴍ ʜᴀꜱʜᴛᴀɢꜱ</h2>
-
-<div class="box" >
-
-<div class="card" >
-<h3 style="margin:5px;" >Simple photoshoot</h3>
-<textarea id="simple" >
+    <div class="box">
+      <div class="card">
+        <h3 style="margin: 5px">Simple photoshoot</h3>
+        <textarea id="simple">
 ✨hashtags✨
 [ #fashion #style #photoshoot #beauty #traditional ♡ #photography #photooftheday #photoinsta #cuties_of_world #love #instagood #instagram #mickylayers #nature #instafeed #explore #featured #foryou #instadaily ♡#trending #northeast ♡ ]
-</textarea>
-<button id="copy" onclick="copy('simple')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('simple')">Copy</button>
+      </div>
 
-<div class="card" >
-<h3 style="margin:5px;" >Pro Photography</h3>
-<textarea id="pro" >
+      <div class="card">
+        <h3 style="margin: 5px">Pro Photography</h3>
+        <textarea id="pro">
 ✨hashtags✨
 [ #fashion #beauty #traditional ♡ #photography #photooftheday  #cuties_of_world #fyp #hairstyle #instagram #mickylayers #trending #travelphotography #naturephotography #instafeed #fitness #explorepage✨ #nature #viral #portraitphotography #assamesetradition #challenge #likesforlike #dslrphotography #featured #foryou #instadaily #northeast #assam♡ ]
-</textarea>
-<button id="copy" onclick="copy('pro')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('pro')">Copy</button>
+      </div>
 
-<div class="card" >
-<h3 style="margin:5px;" >Reels Video</h3>
-<textarea id="reels" >
+      <div class="card">
+        <h3 style="margin: 5px">Reels Video</h3>
+        <textarea id="reels">
 ✨hashtags✨
 [ #fashion #style ♡#reels #viral #trending #reelsassam #reelsindia #cuties_of_world #mickylayers #love #fyp #instagood #instagram #instafeed #instareels #dance #lipsync #performance #reelitfeelit #reelsinstagram #explore #featured #foryou #instadaily ♡ #reelsvideo #northeast ♡ ]
-</textarea>
-<button id="copy" onclick="copy('reels')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('reels')">Copy</button>
+      </div>
 
-<div class="card" >
-<h3 style="margin:5px;" >Nature & Travel Photography </h3>
-<textarea id="nature" >
+      <div class="card">
+        <h3 style="margin: 5px">Nature & Travel Photography</h3>
+        <textarea id="nature">
 ✨hashtags✨
 [ #nature #style  #beauty #traditional ♡#green #viral #trending #photography ##cuties_of_world #instagood #mickylayers #instagram #photoshoot #instafeed #explore #featured #foryou #instadaily ♡ #portraitphotography #fashion #naturephotography #fashionblogger #naturelovers #adventure #smile #landscapephotography ♡ #travel #northeast♡ ]
-</textarea>
-<button id="copy" onclick="copy('nature')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('nature')">Copy</button>
+      </div>
 
-<div class="card" >
-<h3 style="margin:5px;" >Wedding photoshoot</h3>
-<textarea id="wedding" >
+      <div class="card">
+        <h3 style="margin: 5px">Wedding photoshoot</h3>
+        <textarea id="wedding">
 ✨hashtags✨
 [ #fashion #style #photoshoot #beauty #traditional ♡ #photoshoot #photooftheday #photoinsta #cuties_of_world #instagood #selfie #instagram #mickylayers #nature #wedding #weddingphotography  #model  #makeup #weddingdress #engagement #explore #featured #instadaily ♡#trending #northeast ♡ ]
-</textarea>
-<button id="copy" onclick="copy('wedding')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('wedding')">Copy</button>
+      </div>
 
-<div class="card" >
-<h3 style="margin:5px;" >Makeup photoshoot</h3>
-<textarea id="makeup" >
+      <div class="card">
+        <h3 style="margin: 5px">Makeup photoshoot</h3>
+        <textarea id="makeup">
 ✨hashtags✨
 [ #fashion #style #photoshoot #beauty #traditional ♡ #photoshoot #photooftheday #photoinsta #cuties_of_world #instagood #selfie #instagram #mickylayers #nature #wedding  #makeupartist #skincare #jewellery #makeuplover #cosmetics #model #makeuptutorial #makeup  #explore #featured ♡#trending #northeast ♡ ]
-</textarea>
-<button id="copy" onclick="copy('makeup')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('makeup')">Copy</button>
+      </div>
 
-<div class="card" >
-<h3 style="margin:5px;" >Mood</h3>
-<textarea id="mood" >
+      <div class="card">
+        <h3 style="margin: 5px">Mood</h3>
+        <textarea id="mood">
 ✨hashtags✨
 [ #mood #love #instagood #photography #instagram  #photooftheday #fashion #picoftheday #cuties_of_world #style #life #art #happy #me #nature #photo #instadaily #music #likeforlikes #mickylayers #lifestyle #instamood #beautiful #model #girl #myself #summer #vibes #goodvibes #exploret ♡ ]
-</textarea>
-<button id="copy" onclick="copy('mood')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('mood')">Copy</button>
+      </div>
 
-<div class="card" >
-<h3 style="margin:5px;" >Wedding & Makeup photoshoot</h3>
-<textarea id="wedmack" >
+      <div class="card">
+        <h3 style="margin: 5px">Wedding & Makeup photoshoot</h3>
+        <textarea id="wedmack">
 ✨hashtags✨
 [ #fashion #style #photoshoot #beauty #traditional ♡ #photoshoot #photooftheday #photoinsta #cuties_of_world #instagood #selfie #instagram #mickylayers #nature #wedding #weddingphotography #makeupartist #model #makeuptutorial #makeup #weddingdress #engagement #explore #featured #instadaily ♡#trending #northeast ♡ ]
-</textarea>
-<button id="copy" onclick="copy('wedmack')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('wedmack')">Copy</button>
+      </div>
 
-
-<div class="card" >
-<h3 style="margin:5px;" >Custom Hashtags</h3>
-<textarea id="custom" >
+      <div class="card">
+        <h3 style="margin: 5px">Custom Hashtags</h3>
+        <textarea id="custom">
 ✨hashtags✨
 [ ]
-</textarea>
-<button id="copy" onclick="copy('custom')">Copy</button>
-</div>
+</textarea
+        >
+        <button id="copy" onclick="copy('custom')">Copy</button>
+      </div>
+    </div>
 
+    <script type="text/javascript">
+      function copy(id) {
+        // Get the text field
+        var copyText = document.getElementById(id);
 
-</div>
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(copyText.value);
 
-
-
-<script type="text/javascript">
-function copy(id) {
-  // Get the text field
-  var copyText = document.getElementById(id)
-
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-  navigator.clipboard.writeText(copyText.value);
-
-  // Alert the copied text
-  alert("Copied the hashtags: " + copyText.value);
-}
-
-
-
-</script>
-</body>
+        // Alert the copied text
+        alert("Copied the hashtags: " + copyText.value);
+      }
+    </script>
+  </body>
 </html>
