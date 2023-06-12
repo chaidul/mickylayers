@@ -58,3 +58,10 @@ a {
   outline: none;
   background-color: rgb(216, 250, 92);
 }
+.banner {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
