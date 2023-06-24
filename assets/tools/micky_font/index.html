@@ -26,15 +26,24 @@
         box-sizing: border-box;
         user-select: none;
       }
+      .containers {
+        height: 50px;
+        z-index: 1;
+      }
+      .containers .nav-ul li {
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="containers">
       <header class="nav-header">
         <h1>😻ᴍɪᴄᴋʏ ʟᴀʏᴇʀꜱ🌈</h1>
         <div class="toggle" id="toggle">menu</div>
       </header>
-      <nav class="navbar">
+      <nav style="background-color: white">
         <ul class="nav-ul hide-ul" id="nav-ul">
           <li>
             <a href="https://chaidul.github.io/mickylayers/" class="nav-link"
