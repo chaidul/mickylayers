@@ -119,9 +119,33 @@
         var cbody = document.querySelector(".caption-body");
         function add(caption) {
           cbody.innerHTML += `
-          <div class="caption"><span>${caption}</span></div>
+          <div class="caption"><a
+          href="https://translate.google.co.in/?sl=en&tl=as&text=${caption}&op=translate"
+          ><span>${caption}</span></a></div>
         `;
         }
+        async function quotes(tag = "") {
+          var res = await fetch("https://api.quotable.io/random?tags=" + tag);
+          var data = await res.json();
+          add(data.content);
+        }
+        for (let i = 0; i < 5; i++) {
+          quotes("love");
+        }
+        for (let i = 0; i < 5; i++) {
+          quotes("life");
+        }
+
+        async function quotes2() {
+          var res = await fetch("https://type.fit/api/quotes");
+          var data = await res.json();
+          data.forEach(function (val, i) {
+            if (i < 10) {
+              add(val.text);
+            }
+          });
+        }
+        quotes2();
       };
     </script>
   </body>
