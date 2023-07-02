@@ -35,7 +35,7 @@ a {
 .tools .card {
   width: 150px;
   height: 150px;
-  background: linear-gradient(to right, rgb(245, 214, 128), rgb(247, 141, 203));
+  background: linear-gradient(to right, rgb(245, 248, 63), rgb(247, 141, 203));
   border-radius: 10px;
   margin: 10px;
   display: flex;
@@ -57,6 +57,13 @@ a {
   border: none;
   outline: none;
   background-color: rgb(216, 250, 92);
+  transition: ease 500ms;
+}
+.tools .card .btn:hover {
+  width: 140px;
+  height: 20px;
+  background-color: rgb(248, 74, 6);
+  color: white;
 }
 .banner {
   width: 100%;

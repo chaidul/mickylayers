@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instagram Caption for Post/Reels</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Instagram Caption for Post/Reels" />
+    <meta name="keywords" content="cation, quotes, poem, sayeri" />
+    <meta name="author" content="chaidul hussain (Raju)" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link rel="stylesheet" href="../../../css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: white;
+    }
+    .caption-body::-webkit-scrollbar-thumb {
+      background-color: rgb(90, 247, 17);
+    }
+    ::-webkit-scrollbar-thumb {
+      width: 100%;
+      border-radius: 20px;
+      background-color: rgb(247, 17, 170);
+    }
+
+    .caption-body {
+      width: 100%;
+      height: 100vh;
+      background: rgb(202, 200, 200);
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+    }
+    .caption-body .caption {
+      width: 360px;
+      height: 100px;
+      background-color: white;
+      margin: 10px auto;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .caption-body .caption span {
+      font-size: 15px;
+      font-weight: bold;
+      font-family: cursive;
+      color: rgb(59, 57, 57);
+    }
+    .caption-body .caption span::selection {
+      background-color: rgb(248, 3, 126);
+      color: rgb(247, 243, 243);
+    }
+  </style>
+  <body>
+    <div class="containers">
+      <header class="nav-header">
+        <h1>😻ᴍɪᴄᴋʏ ʟᴀʏᴇʀꜱ🌈</h1>
+        <div class="toggle" id="toggle"><i class="fa fa-bars"></i></div>
+      </header>
+      <nav class="navbar">
+        <ul class="nav-ul hide-ul" id="nav-ul">
+          <li>
+            <a href="https://chaidul.github.io/mickylayers/" class="nav-link"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/chaidul/mickylayers" class="nav-link"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chaidul-hussain"
+              class="nav-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="../../../js/navbar.js"></script>
+    <div class="caption-body">
+      <div class="caption"><span>Only some memories are left </span></div>
+      <div class="caption">
+        <span>life was better we got excited for little things</span>
+      </div>
+      <div class="caption"><span>​life is batter without feelling </span></div>
+      <div class="caption">
+        <span>sometimes memories are the reason why we can't move on. </span>
+      </div>
+      <div class="caption"><span>​i can't force people to choose us</span></div>
+      <div class="caption">
+        <span
+          >i'm single Because God is busy writing to best Love story for
+          me</span
+        >
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var cbody = document.querySelector(".caption-body");
+        function add(caption) {
+          cbody.innerHTML += `
+          <div class="caption"><span>${caption}</span></div>
+        `;
+        }
+      };
+    </script>
+  </body>
+</html>
