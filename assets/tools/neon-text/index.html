@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instagram Highlight text Icon create</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="create a text icon for instagram highlight or other icon"
+    />
+    <meta name="keywords" content="insta highlight icon" />
+    <meta name="author" content="chaidul hussain (Raju)" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    /> -->
+    <link rel="stylesheet" href="../../../css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: white;
+    }
+    ::-webkit-scrollbar-thumb {
+      width: 100%;
+      border-radius: 20px;
+      background-color: rgb(247, 17, 170);
+    }
+    .download-grid {
+      width: 100%;
+      height: auto;
+      display: grid;
+      place-items: center;
+      position: relative;
+      top: 10px;
+    }
+    .download-grid .search-box {
+      display: flex;
+    }
+    #search {
+      width: 300px;
+      height: 30px;
+      outline: none;
+      border: 1px solid blue;
+      border-radius: 10px;
+    }
+    button[type="button"] {
+      background-color: dodgerblue;
+      color: white;
+      height: 30px;
+      width: 50px;
+      border: none;
+      transition: ease 100ms;
+      margin: auto 5px;
+      border-radius: 10px;
+    }
+    button[type="button"]:hover {
+      background-color: rgb(32, 150, 247);
+      color: rgb(37, 33, 33);
+    }
+    button[type="button"]:active {
+      background-color: white;
+      color: black;
+    }
+    .images {
+      margin: 10px auto;
+    }
+    .images .image {
+      width: 200px;
+      height: 200px;
+      background-color: rgb(10, 10, 10);
+      color: white;
+      display: grid;
+      place-items: center;
+      /* font-size: 100px; */
+      user-select: none;
+      /* font-family: cursive; */
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 0px 20px rgb(0, 68, 255);
+    }
+  </style>
+  <body>
+    <div class="containers">
+      <header class="nav-header">
+        <h1>😻ᴍɪᴄᴋʏ ʟᴀʏᴇʀꜱ🌈</h1>
+        <div class="toggle" id="toggle"><i class="fa fa-bars"></i></div>
+      </header>
+      <nav class="navbar">
+        <ul class="nav-ul hide-ul" id="nav-ul">
+          <li>
+            <a href="https://chaidul.github.io/mickylayers/" class="nav-link"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/chaidul/mickylayers" class="nav-link"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chaidul-hussain"
+              class="nav-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="download-grid">
+      <div class="search-box">
+        <input
+          type="search"
+          id="search"
+          class="input"
+          placeholder="Write a letter"
+        />
+        <button type="button" id="get">GET</button>
+      </div>
+      <select name="" id="shadow">
+        <option value="red">Shadow</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="fuchsia">pink</option>
+        <option value="green">green</option>
+        <option value="cyan">cyan</option>
+      </select>
+      <select name="" id="color">
+        <option value="white">Fill-color</option>
+        <option value="white">white</option>
+        <option value="cyan">cyan</option>
+        <option value="black">black</option>
+        <option value="pink">pink</option>
+        <option value="green">green</option>
+        <option value="lightgreen">lightgreen</option>
+      </select>
+      <select name="" id="font">
+        <option value="serif">Font Style</option>
+        <option value="sans-serif">sans-serif</option>
+        <option value="cursive">cursive</option>
+        <option value=""></option>
+      </select>
+      <div class="images">
+        <canvas
+          class="image"
+          id="image"
+          width="200px"
+          height="200px"
+          style="border: 1px solid black"
+        ></canvas>
+      </div>
+      <a href="" id="download"></a>
+    </section>
+    <script src="../../../js/navbar.js"></script>
+
+    <script>
+      window.onload = function () {
+        var input = document.querySelector(".input");
+        var shadow = document.querySelector("#shadow");
+        var color = document.querySelector("#color");
+        var font = document.querySelector("#font");
+        var get = document.getElementById("get");
+
+        var cv = document.getElementById("image");
+        // var imgg = document.getElementById("images");
+        get.addEventListener("click", function () {
+          var ctx = cv.getContext("2d");
+          ctx.clearRect(0, 0, cv.width, cv.height);
+
+          ctx.font = "100px " + font.value;
+          ctx.fillStyle = color.value;
+          // ctx.strokeText(input.value, cv.width / 2, cv.height / 1.7);
+          ctx.textAlign = "center";
+          ctx.shadowColor = shadow.value;
+          ctx.shadowBlur = 7;
+          ctx.fillText(input.value, cv.width / 2, cv.height / 1.7);
+        });
+        cv.addEventListener("click", function () {
+          // alert(222);
+          var url = cv.toDataURL("image/jpg");
+          var save = document.getElementById("download");
+          save.href = url;
+          save.download = "image.jpg";
+          save.click();
+          alert("Downloaded Success");
+        });
+      };
+    </script>
+  </body>
+</html>
